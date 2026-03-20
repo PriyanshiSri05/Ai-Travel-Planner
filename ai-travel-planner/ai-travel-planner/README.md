@@ -19,36 +19,8 @@ ai-travel-planner/
 │   └── js/
 │       └── app.js          ← Frontend logic
 └── README.md
+
 ```
-
----
-
-## Setup (3 steps)
-
-### 1. Install Python dependencies
-```bash
-cd ai-travel-planner
-pip install -r requirements.txt
-```
-
-### 2. Add your Anthropic API key
-```bash
-cp .env.example .env
-```
-Edit `.env` and paste your key:
-```
-ANTHROPIC_API_KEY=sk-ant-your-key-here
-```
-Get your key at: https://console.anthropic.com
-
-### 3. Run the app
-```bash
-python server.py
-```
-
-Open your browser at **http://localhost:5000** 🎉
-
----
 
 ## Example Queries
 
@@ -71,20 +43,6 @@ Open your browser at **http://localhost:5000** 🎉
 | Itinerary | Hour-by-hour plan for each day |
 | Budget | Per-category breakdown + total vs budget |
 | Tips | Transport, food, payments, apps |
-
----
-
-## Deploy Online (Optional)
-
-### Render.com (Free)
-1. Push this folder to GitHub
-2. Go to render.com → New Web Service
-3. Set env var: `ANTHROPIC_API_KEY=sk-ant-...`
-4. Build: `pip install -r requirements.txt`
-5. Start: `python server.py`
-
-### Railway / Fly.io
-Same process — set the env var and deploy.
 
 ---
 
